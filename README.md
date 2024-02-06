@@ -23,4 +23,4 @@ Now you can run the notebooks using Jupyter Lab
 ```
 jupyter lab
 ```
-Otherwise, try it on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/BaroudLab/APC-mutation-T-cells.git/aaristov-patch-rm-pywin)
+Otherwise, try it on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/BaroudLab/APC-mutation-T-cells.git)
