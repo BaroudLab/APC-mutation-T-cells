@@ -15,6 +15,7 @@ git clone https://github.com/BaroudLab/APC-mutation-T-cells.git
 ```
 This should download the project. Then install the required packages. In the terminal, navigate to the package directory and type:
 ```
-pip install .
+cd APC-mutation-T-cells
+pip install -r requirements.txt
 ```
 The library is now installed on your computer.
