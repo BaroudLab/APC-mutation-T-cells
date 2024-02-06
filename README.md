@@ -18,4 +18,8 @@ This should download the project. Then install the required packages. In the ter
 cd APC-mutation-T-cells
 pip install -r requirements.txt
 ```
-The library is now installed on your computer.
+Now you can run the notebooks using Jupyter Lab
+
+```
+jupyter lab
+```
