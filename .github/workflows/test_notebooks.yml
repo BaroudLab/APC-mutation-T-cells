@@ -20,12 +20,20 @@ jobs:
       with:
         python-version: '3.11'
 
+    - name: Cache pip packages
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         pip install nbconvert ipykernel
 
-    - name: Execute notebooks
+    - name: Execute notebooks in parallel
       run: |
-        find . -name "*.ipynb" -exec jupyter nbconvert --to notebook --execute {} +
+        find . -name "*.ipynb" -type f | xargs -P 4 -I {} jupyter nbconvert --to notebook --execute {}
