@@ -6,7 +6,7 @@ This repository contains all data and jupyter notebooks to reproduce analysis an
 
 We recommand to create a specific python environment to avoid any conflict in package versions.
 ```
-conda create --name ### python=3.7
+conda create --name ### python=3.11
 ```
 
 You need to install via the repository. In the command prompt enter:
